@@ -103,14 +103,8 @@ header {
 }
 
 .about .left{
-  width: 40%;
+  width: 29%;
 }
-
-/* 
-.about .left .swiper {
-  width: 15rem;
-  height: 15rem;
-} */
 
 .about .left .swiper-slide {
   display: flex;
@@ -120,7 +114,7 @@ header {
 }
 
 .about .right{
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   margin-left: 5rem;
@@ -128,6 +122,7 @@ header {
 
 .about .right h2{
   font-size: 2.3rem;
+  margin: 0 0 1.5rem 0;
 }
 
 .about .right .right-button{
@@ -139,6 +134,7 @@ header {
   border-radius: 7px;
   position: relative;
   right: -50%;
+  border:2px solid #F8B600;
 }
 
 .about .right a{
@@ -160,6 +156,7 @@ header {
   margin: 3rem;
 }
 
+
 .produce .top{
   display: flex;
   flex-direction: row;
@@ -167,23 +164,42 @@ header {
 }
 
 .produce .top .left {
-  width: 40%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.produce .top .left .left-text p{
+  margin: 1rem 0;
+}
+
+.produce .top .left .left-head img{
+  width: 80%;
 }
 
 .produce .top .right{
-  width: 40%;
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  position: relative;
+}
+
+.produce .top .right img{
+  width: 65%;
 }
 
 .produce .bottom{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-top: 2.5rem;
+  justify-content: center;
+  margin-top: 0;
 }
 
 .produce .bottom .mission {
-  margin-right: 5rem;
-  width: 30%;
+  margin: 0 6.9rem 0 0;
+  width: 25%;
   height: 15rem;
   border-left: 2.1rem solid;
   border-left-color: #6B801A;
@@ -198,7 +214,8 @@ header {
 }
 
 .produce .bottom .vision {
-  width: 30%;
+  margin: 0 0 0 6.9rem;
+  width: 25%;
   height: 15rem;
   border-left: 2.1rem solid;
   border-left-color: #F8B600;
@@ -217,8 +234,144 @@ header {
   background: url(../images/gallery_background.png) no-repeat;
   background-position: top;
   background-size: contain;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
+.gallery .swiper-slide{
+  width: 20rem;
+  height: 20rem;
+  margin-right: 1rem;
+}
+
+.gallery .swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+.gallery .swiper-wrapper{
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.gallery .button{
+  width: 20%;
+  padding: 0.2rem 0;
+  margin-top: 1.8rem;
+  background-color: #6B801A;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.gallery .button a{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.gallery .button:hover{
+  background-color: #F8B600;
+}
+
+
+.products{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .head{
+  margin: 3rem 0 0 0;
+  color: #6B801A;
+  font-size: 2rem;
+}
+.products .content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.products .content .left, .products .content .right{
+  width: 12rem;
+  height: 12rem;
+  border: 0.8px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-weight: bold;
+  color: #6B801A;
+}
+
+.products .content .middle{
+  width: 30%;
+  margin: 0 3.3rem;
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .content .middle .button{
+  width: 35%;
+  padding: 0.2rem;
+  margin-top: 2rem;
+  background-color: #F8B600;
+  text-align: center;
+  border-radius: 7px;
+  position: relative;
+}
+
+.products .content .middle .button a{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.products .content .middle .button:hover{
+  background-color: #6B801A;
+}
+
+
+.partners{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners .head{
+  margin: 5rem 0 3rem 0;
+  color: #F8B600;
+  font-size: 2rem;
+}
+
+.partners .content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 12% 12% 12% 12% 6%;
+  grid-template-rows: 7rem 15rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.partners .content div{
+  width: 8rem;
+  height: 8rem;
+  border: 0.8px solid gray;
+}
+
+.partners .text{
+  width: 40%;
+}
 
 footer {
   position: relative;
@@ -227,7 +380,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 2rem 7rem 2rem 7rem;
-  margin-top: 10rem;
+  margin-top: 3.5rem;
   background-color: #6B801A;
   color: white;
 }
@@ -274,6 +427,7 @@ footer .top .action .action-bottom address{
   font-weight: bold;
   line-height: 1.5rem;
   margin-top: 1rem;
+  font-style: normal;
 }
 
 footer .top .action .action-bottom address a{

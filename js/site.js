@@ -46,7 +46,22 @@ var swiper2 = new Swiper(".cardSwiper", {
   }
 });
 
+// var swiper3 = document.querySelector('.gallery-swiper').slider;
 
+swiper3 = new Swiper('.gallery-swiper', {
+  grabCursor: false,
+  loop: true,
+  centeredSlides: true,
+  slidesPerview: 5,
+  shortSwipes: false,
+  longSwipes: false,
+  allowTouchMove: false,
+  autoplay: {
+    delay:1,
+    disableOnInteraction: false,
+  },
+  speed: 40000,
+})
 
 
 var started = document.querySelector('.heading');
