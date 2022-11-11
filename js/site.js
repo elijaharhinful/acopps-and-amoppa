@@ -49,18 +49,16 @@ var swiper2 = new Swiper(".cardSwiper", {
 // var swiper3 = document.querySelector('.gallery-swiper').slider;
 
 swiper3 = new Swiper('.gallery-swiper', {
-  grabCursor: false,
-  loop: true,
+  spaceBetween: 0,
   centeredSlides: true,
-  slidesPerview: 5,
-  shortSwipes: false,
-  longSwipes: false,
-  allowTouchMove: false,
+  speed: 9000,
   autoplay: {
-    delay:1,
-    disableOnInteraction: false,
+    delay: 1,
   },
-  speed: 40000,
+  loop: true,
+  slidesPerView:'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true,
 })
 
 

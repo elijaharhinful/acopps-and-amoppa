@@ -10,6 +10,8 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
+
+  background-color: #fcfbfd;
 }
 
 header {
@@ -23,7 +25,7 @@ header {
   top: 0;
   left: 0;
   bottom: 0;
-  padding: 0 8%;
+  padding: 0 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +33,7 @@ header {
   transition: 0.5s;
 }
 
-.top-nav .logo img{
+.top-nav .logo img {
   width: 10%;
   height: 10%;
 }
@@ -46,7 +48,7 @@ header {
 
 .top-nav ul li {
   display: inline-block;
-  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .top-nav ul li a {
@@ -68,6 +70,7 @@ header {
   height: 93vh;
   padding: 0;
 }
+
 .hero .swiper {
   width: 100%;
   height: 100%;
@@ -92,7 +95,11 @@ header {
   padding: 1.5rem;
 }
 
-.about{
+.swiper-button-next, .swiper-button-prev{
+  --swiper-navigation-color:white;
+}
+
+.about {
   padding: 3rem 0;
   display: flex;
   flex-direction: row;
@@ -102,7 +109,7 @@ header {
   color: white;
 }
 
-.about .left{
+.about .left {
   width: 29%;
 }
 
@@ -113,19 +120,19 @@ header {
   color: #fff;
 }
 
-.about .right{
+.about .right {
   width: 30%;
   display: flex;
   flex-direction: column;
   margin-left: 5rem;
 }
 
-.about .right h2{
+.about .right h2 {
   font-size: 2.3rem;
   margin: 0 0 1.5rem 0;
 }
 
-.about .right .right-button{
+.about .right .right-button {
   width: 45%;
   padding: 0.2rem 0;
   margin-top: 1.8rem;
@@ -134,21 +141,21 @@ header {
   border-radius: 7px;
   position: relative;
   right: -50%;
-  border:2px solid #F8B600;
+  border: 2px solid #F8B600;
 }
 
-.about .right a{
+.about .right a {
   color: white;
   text-decoration: none;
   display: block;
 }
 
-.about .right .right-button:hover{
+.about .right .right-button:hover {
   background-color: #6B801A;
   border: 2px solid;
 }
 
-.produce{
+.produce {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,7 +164,7 @@ header {
 }
 
 
-.produce .top{
+.produce .top {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -171,26 +178,26 @@ header {
   align-items: center;
 }
 
-.produce .top .left .left-text p{
+.produce .top .left .left-text p {
   margin: 1rem 0;
 }
 
-.produce .top .left .left-head img{
+.produce .top .left .left-head img {
   width: 80%;
 }
 
-.produce .top .right{
+.produce .top .right {
   display: flex;
   justify-content: center;
   width: 35%;
   position: relative;
 }
 
-.produce .top .right img{
+.produce .top .right img {
   width: 65%;
 }
 
-.produce .bottom{
+.produce .bottom {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -203,12 +210,12 @@ header {
   height: 15rem;
   border-left: 2.1rem solid;
   border-left-color: #6B801A;
-  border-radius: 23px ;
+  border-radius: 23px;
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
-.produce .bottom .mission h2{
+.produce .bottom .mission h2 {
   font-size: 2rem;
   color: #6B801A;
 }
@@ -219,45 +226,46 @@ header {
   height: 15rem;
   border-left: 2.1rem solid;
   border-left-color: #F8B600;
-  border-radius: 23px ;
+  border-radius: 23px;
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
-.produce .bottom .vision h2{
+.produce .bottom .vision h2 {
   font-size: 2rem;
   color: #F8B600;
 }
 
-.gallery{
-  height: 40rem;
+.gallery {
+  height: 30rem;
   background: url(../images/gallery_background.png) no-repeat;
   background-position: top;
-  background-size: contain;
-  /* display: flex;
+  background-size: cover;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
-.gallery .swiper-slide{
+.gallery .swiper-slide {
   width: 20rem;
-  height: 20rem;
-  margin-right: 1rem;
+  height: 17rem;
+  margin-right: 3.4rem;
 }
 
-.gallery .swiper-slide img{
+.gallery .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
-.gallery .swiper-wrapper{
+
+.gallery .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   -o-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
 }
 
-.gallery .button{
+.gallery .button {
   width: 20%;
   padding: 0.2rem 0;
   margin-top: 1.8rem;
@@ -266,30 +274,31 @@ header {
   border-radius: 7px;
 }
 
-.gallery .button a{
+.gallery .button a {
   color: white;
   text-decoration: none;
   display: block;
 }
 
-.gallery .button:hover{
+.gallery .button:hover {
   background-color: #F8B600;
 }
 
 
-.products{
+.products {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.products .head{
+.products .head {
   margin: 3rem 0 0 0;
   color: #6B801A;
   font-size: 2rem;
 }
-.products .content{
+
+.products .content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -297,19 +306,32 @@ header {
 }
 
 
-.products .content .left, .products .content .right{
-  width: 12rem;
-  height: 12rem;
-  border: 0.8px solid gray;
+.products .content .left,
+.products .content .right {
+  width: 50%;
+  height: 50%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  padding: 2rem;
-  font-weight: bold;
-  color: #6B801A;
+  justify-content: flex-end;
 }
 
-.products .content .middle{
+.products .content .right {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.products .content .left video,
+.products .content .right video {
+  width: 50%;
+  height: 50%;
+}
+
+.products .content .middle {
   width: 30%;
   margin: 0 3.3rem;
   padding: 2rem 0 0 0;
@@ -319,8 +341,8 @@ header {
   align-items: center;
 }
 
-.products .content .middle .button{
-  width: 35%;
+.products .content .middle .button {
+  width: 55%;
   padding: 0.2rem;
   margin-top: 2rem;
   background-color: #F8B600;
@@ -329,31 +351,31 @@ header {
   position: relative;
 }
 
-.products .content .middle .button a{
+.products .content .middle .button a {
   color: white;
   text-decoration: none;
   display: block;
 }
 
-.products .content .middle .button:hover{
+.products .content .middle .button:hover {
   background-color: #6B801A;
 }
 
 
-.partners{
+.partners {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.partners .head{
+.partners .head {
   margin: 5rem 0 3rem 0;
   color: #F8B600;
   font-size: 2rem;
 }
 
-.partners .content{
+.partners .content {
   width: 100%;
   display: grid;
   grid-template-columns: 12% 12% 12% 12% 6%;
@@ -363,13 +385,13 @@ header {
 }
 
 
-.partners .content div{
+.partners .content div {
   width: 8rem;
   height: 8rem;
   border: 0.8px solid gray;
 }
 
-.partners .text{
+.partners .text {
   width: 40%;
 }
 
@@ -397,11 +419,11 @@ footer .top .action {
   padding: 0 2rem;
 }
 
-footer .top p{
+footer .top p {
   line-height: 1.5rem;
 }
 
-footer .top .action .action-top{
+footer .top .action .action-top {
   display: flex;
   flex-direction: row;
 }
@@ -416,25 +438,25 @@ footer .top .action .action-top .logo {
 
 footer .top .logo img {
   height: 50%;
-  width: 50%;
+  width: 60%;
 }
 
-footer .top .action .action-top .action-right{
-  width: 50%;
+footer .top .action .action-top .action-right {
+  width: 60%;
 }
 
-footer .top .action .action-bottom address{
+footer .top .action .action-bottom address {
   font-weight: bold;
   line-height: 1.5rem;
   margin-top: 1rem;
   font-style: normal;
 }
 
-footer .top .action .action-bottom address a{
+footer .top .action .action-bottom address a {
   color: white;
 }
 
-footer .top .action .action-bottom address a:hover{
+footer .top .action .action-bottom address a:hover {
   color: #F8B600;
 }
 
@@ -510,18 +532,20 @@ footer .bottom-nav .active {
   color: #F8B600;
 }
 
-
+/* for bigger screens */
 @media screen and (min-width: 1880px) {
-  .about .right{
+  .about .right {
     width: 40%;
   }
 
-    footer .bottom-nav ul li {
-    margin-right: 1.5rem;
+  footer .top .logo img {
+    height: 50%;
+    width: 50%;
   }
 
 }
 
+/* for mobile phones */
 @media screen and (max-width: 768px) {
 
   header {
