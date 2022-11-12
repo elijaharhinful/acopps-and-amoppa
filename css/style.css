@@ -28,7 +28,7 @@ header {
   padding: 0 5%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: right;
   z-index: 10;
   transition: 0.5s;
 }
@@ -48,11 +48,20 @@ header {
 
 .top-nav ul{
   width: 80%;
+  display: flex;
+  flex: row;
+  justify-content: right;
+  align-items: right;
 }
+
 
 .top-nav ul li {
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 2.5rem;
+}
+
+.top-nav ul li:last-child{
+  margin-right: 0;
 }
 
 .top-nav ul li a {
@@ -94,7 +103,7 @@ header {
   z-index: 99;
   color: white;
   position: absolute;
-  top: 80%;
+  top: 72%;
   left: 20%;
   padding: 1.5rem;
 }
@@ -459,11 +468,12 @@ footer .top .action .action-bottom address {
   font-style: normal;
 }
 
-footer .top .action .action-bottom address a {
+footer .top a {
+  text-decoration: none;
   color: white;
 }
 
-footer .top .action .action-bottom address a:hover {
+footer .top  a:hover {
   color: #F8B600;
 }
 
