@@ -141,25 +141,24 @@ header {
 
 .about .right .right-button {
   width: 55%;
-  padding: 0.2rem 0;
   margin: 1.8rem;
-  background-color: #F8B600;
   text-align: center;
-  border-radius: 7px;
   position: relative;
   right: -40%;
-  border: 2px solid #F8B600;
 }
 
 .about .right a {
+  background-color: #F8B600;
   color: white;
+  border-radius: 7px;
   text-decoration: none;
   display: block;
+  padding: 0.2rem 0;
 }
 
-.about .right .right-button:hover {
-  background-color: #6B801A;
-  border: 2px solid;
+.about .right a:hover{
+  background-color: #ffffff;
+  color: #6B801A;
 }
 
 .produce {
@@ -274,21 +273,22 @@ header {
 
 .gallery .button {
   width: 20%;
-  padding: 0.2rem 0;
   margin-top: 1.8rem;
-  background-color: #6B801A;
   text-align: center;
-  border-radius: 7px;
 }
 
 .gallery .button a {
+  padding: 0.2rem 0;
+  background-color: #6B801A;
   color: white;
   text-decoration: none;
   display: block;
+  border-radius: 7px;
 }
 
-.gallery .button:hover {
-  background-color: #F8B600;
+.gallery .button a:hover {
+  background-color: #ffffff;
+  color: #6B801A;
 }
 
 
@@ -444,8 +444,8 @@ footer .top .action .action-top .logo {
 }
 
 footer .top .logo img {
-  height: 50%;
-  width: 58%;
+  height: 85%;
+  width: 90%;
 }
 
 footer .top .action .action-top .action-right {
