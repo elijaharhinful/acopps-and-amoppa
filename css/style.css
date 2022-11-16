@@ -559,7 +559,7 @@ footer .bottom-nav .active {
 .about-content{
   display: flex;
   flex-direction: column;
-  padding: 3rem 15rem 10rem 15rem;
+  padding: 3rem 15rem 6rem 15rem;
   line-height: 2rem;
 }
 
@@ -567,6 +567,11 @@ footer .bottom-nav .active {
   padding-bottom: 6rem;
   line-height: 2rem;
 }
+
+.about-content .organogram img{
+  width: 100%;
+}
+
 
 /* for bigger screens */
 @media screen and (min-width: 1880px) {
