@@ -112,6 +112,28 @@ header {
   --swiper-navigation-color:white;
 }
 
+
+/* socials style begins here */
+.socials {
+  position: fixed;
+  top: 75%;
+  bottom: 0;
+  margin-left: 2rem;
+  z-index: 56;
+}
+
+.socials img {
+  height: 3rem;
+  width: 3rem;
+  transition: 0.2s;
+}
+
+.socials img:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); /* Safari 3-8 */
+}
+
 .about {
   padding: 3rem 0;
   display: flex;
@@ -272,6 +294,13 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.2s;
+}
+
+.gallery .swiper-slide img:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); /* Safari 3-8 */
 }
 
 .gallery .swiper-wrapper {
