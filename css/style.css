@@ -564,8 +564,21 @@ footer .bottom-nav .active {
 }
 
 .about-content .top-text{
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   line-height: 2rem;
+}
+
+.about-content .core-values{
+  padding-bottom: 4rem;
+}
+
+
+.about-content .core-values .down{
+  padding: 1rem 2rem;
+}
+
+.about-content .core-values .down ol li{
+  list-style: number;
 }
 
 .about-content .organogram img{
