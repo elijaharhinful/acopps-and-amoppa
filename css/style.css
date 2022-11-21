@@ -123,8 +123,8 @@ header {
 }
 
 .socials img {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   transition: 0.2s;
 }
 
@@ -609,6 +609,19 @@ footer .bottom-nav .active {
 
 .about-content .core-values .down ol li{
   list-style: number;
+}
+
+.about-content .certifications{
+  padding-top: 4rem;
+  line-height: 2rem;
+}
+
+.about-content .certifications .down{
+  padding: 1rem 2rem;
+}
+
+.about-content .certifications ul li{
+  list-style: circle;
 }
 
 .about-content .organogram img{
