@@ -444,7 +444,12 @@ header {
 .partners .content div {
   width: 8rem;
   height: 8rem;
-  border: 0.8px solid gray;
+}
+
+.partners .content div img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .partners .text {
