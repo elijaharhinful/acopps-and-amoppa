@@ -434,7 +434,7 @@ header {
 .partners .content {
   width: 100%;
   display: grid;
-  grid-template-columns: 12% 12% 12% 9%;
+  grid-template-columns: 12% 12% 12% 12% 9%;
   grid-template-rows: 7rem 15rem;
   align-items: center;
   justify-content: center;
