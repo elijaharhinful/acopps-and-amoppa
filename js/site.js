@@ -68,26 +68,69 @@ swiper3 = new Swiper('.gallery-swiper', {
 //   delay: 900
 // });
 
+var slideLeft = {
+  distance: '200%',
+  origin: 'left',
+  opacity: null,
+  delay: 450,
+}
 
-// var leftArrayItems = [
-//   document.querySelector('.quote'),
-//   document.querySelector('.publications'),
-//   document.querySelector('.distinction'),
-//   document.querySelector('.contact')
-// ]
+var slideRight = {
+  distance: '200%',
+  origin: 'right',
+  opacity: null,
+  delay: 450,
+}
 
-// ScrollReveal().reveal(leftArrayItems, {
-//   delay: 450
-// })
+var slideUp = {
+  distance: '400%',
+  origin: 'bottom',
+  opacity: null,
+  delay: 2000,
+}
 
-// var rightArrayItems = [
-//   document.querySelector('.quote'),
-//   document.querySelector('.publications'),
-//   document.querySelector('.distinction'),
-//   document.querySelector('.contact')
-// ]
+var justReveal = {
+  delay: 550,
+  duration: 900,
+}
 
-// ScrollReveal().reveal(rightArrayItems, {
-//   delay: 450
-// })
+var leftArrayItems = [
+  document.querySelector('.about .swiper'),
+  document.querySelector('.produce .mission'),
+  document.querySelector('.products .content .left'),
+]
+
+ScrollReveal().reveal(leftArrayItems, slideLeft);
+
+var rightArrayItems = [
+  document.querySelector('.about .right-button'),
+  document.querySelector('.produce .vision'),
+  document.querySelector('.products .content .right'),
+  document.querySelector('.contact')
+]
+
+ScrollReveal().reveal(rightArrayItems, slideRight);
+
+var girl = document.querySelector('.produce .top .right');
+
+ScrollReveal().reveal(girl, slideUp);
+
+var justRevealArrayItems = [
+  document.querySelector('.gallery .button'),
+  document.querySelector('.products .button'),
+  document.querySelector('.footer .logo'),
+]
+
+ScrollReveal().reveal(justRevealArrayItems, justReveal);
+
+ScrollReveal().reveal(document.querySelector('.partners .one'), {delay: 300});
+ScrollReveal().reveal(document.querySelector('.partners .two'), {delay: 900});
+ScrollReveal().reveal(document.querySelector('.partners .three'), {delay: 1000});
+ScrollReveal().reveal(document.querySelector('.partners .four'), {delay: 400});
+ScrollReveal().reveal(document.querySelector('.partners .five'), {delay: 1200});
+ScrollReveal().reveal(document.querySelector('.partners .six'), {delay: 1300});
+ScrollReveal().reveal(document.querySelector('.partners .seven'), {delay: 1500});
+ScrollReveal().reveal(document.querySelector('.partners .eight'), {delay: 550});
+ScrollReveal().reveal(document.querySelector('.partners .nine'), {delay: 200});
+ScrollReveal().reveal(document.querySelector('.partners .ten'), {delay: 700});
 
