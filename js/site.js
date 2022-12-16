@@ -62,21 +62,32 @@ swiper3 = new Swiper('.gallery-swiper', {
 })
 
 
-var started = document.querySelector('.heading');
+// var started = document.querySelector('.about');
 
-ScrollReveal().reveal(started, {
-  delay: 700
-});
+// ScrollReveal().reveal(started, {
+//   delay: 900
+// });
 
 
-var leftArrayItems = [
-  document.querySelector('.about'),
-  document.querySelector('.quote'),
-  document.querySelector('.publications'),
-  document.querySelector('.distinction'),
-  document.querySelector('.contact')
-]
+// var leftArrayItems = [
+//   document.querySelector('.quote'),
+//   document.querySelector('.publications'),
+//   document.querySelector('.distinction'),
+//   document.querySelector('.contact')
+// ]
 
-ScrollReveal().reveal(leftArrayItems, {
-  delay: 450
-})
+// ScrollReveal().reveal(leftArrayItems, {
+//   delay: 450
+// })
+
+// var rightArrayItems = [
+//   document.querySelector('.quote'),
+//   document.querySelector('.publications'),
+//   document.querySelector('.distinction'),
+//   document.querySelector('.contact')
+// ]
+
+// ScrollReveal().reveal(rightArrayItems, {
+//   delay: 450
+// })
+
